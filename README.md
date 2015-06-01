@@ -1,0 +1,2 @@
+# dinofauref
+Tradutor Português/Dinofaurêf
