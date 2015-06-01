@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+$breakpoint: 700px;
+
+.textos{
+  margin: auto;
+  width: 90%;
+  textarea{
+    width: 100%;
+    @media(min-width: $breakpoint){
+      height: 15em;
+    }@media(max-width: $breakpoint){
+      height: 10em;
+    }
+  }
+  .texto{
+    width: 100%;
+    padding: 2px;
+    @media(min-width: $breakpoint){
+      display: inline-block;
+      max-width: 45%;
+    }
+  }
+  .botao{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

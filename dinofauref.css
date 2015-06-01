@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box; }
+
+.textos {
+  margin: auto;
+  width: 90%; }
+  .textos textarea {
+    width: 100%; }
+    @media (min-width: 700px) {
+      .textos textarea {
+        height: 15em; } }
+    @media (max-width: 700px) {
+      .textos textarea {
+        height: 10em; } }
+  .textos .texto {
+    width: 100%;
+    padding: 2px; }
+    @media (min-width: 700px) {
+      .textos .texto {
+        display: inline-block;
+        max-width: 45%; } }
+  .textos .botao {
+    margin-left: auto;
+    margin-right: auto; }
+
+/*# sourceMappingURL=dinofauref.css.map */
