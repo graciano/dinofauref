@@ -20,6 +20,10 @@ FONEMAS = {
     'ç'  : 'f'
 };
 
+var isLowerCase = function(s){
+    return s.toLowerCase() === s;
+};
+
 /**
  * @param palavra
  * @returns palafra
@@ -28,7 +32,27 @@ traduzPalavra = function(palavra){
     var palafra = palavra;
     for (var fonema in FONEMAS) {
         if (FONEMAS.hasOwnProperty(fonema)) {
-            palafra = palafra.replace(new RegExp(fonema, 'gi'),FONEMAS[fonema]);
+            palafra = palafra.replace(new RegExp(fonema, 'gi'),function(match){
+                var replaceString = "";
+                var replafe = FONEMAS[match.toLowerCase()];
+                var lastLowerCase = true;
+                for(var i=0; i<match.length && i<replafe.length; i++){
+                    var letra = match[i];
+                    if(lastLowerCase = isLowerCase(letra))
+                        replaceString = replaceString + replafe[i];
+                    else
+                        replaceString = replaceString + replafe[i].toUpperCase();
+                }
+                if(match.length < replafe.length){
+                    for(i=match.length; i<replafe.length; i++){
+                        if(lastLowerCase)
+                            replaceString = replaceString + replafe[i];
+                        else
+                            replaceString = replaceString + replafe[i].toUpperCase();
+                    }
+                }
+                return replaceString;
+            });
         }
     }
     return palafra;
