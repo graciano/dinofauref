@@ -1,6 +1,23 @@
 * {
   box-sizing: border-box; }
 
+header {
+  margin: auto;
+  width: 90%;
+  text-align: center; }
+  @media (max-width: 700px) {
+    header h1 {
+      font-size: 1.2em; } }
+
+.img-dinofauro {
+  height: 10em;
+  border-radius: 50%; }
+
+footer {
+  margin: auto;
+  width: 90%;
+  text-align: center; }
+
 .textos {
   margin: auto;
   width: 90%; }

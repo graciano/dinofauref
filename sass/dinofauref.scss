@@ -3,6 +3,27 @@
 }
 $breakpoint: 700px;
 
+header{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  h1{
+    @media(max-width: $breakpoint){
+      font-size: 1.2em;
+    }
+  }
+}
+.img-dinofauro{
+  height: 10em;
+  border-radius: 50%;
+}
+
+footer{
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
 .textos{
   margin: auto;
   width: 90%;
