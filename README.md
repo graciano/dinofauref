@@ -1,8 +1,12 @@
-# dinofauref
+# Dinofauref
 Tradutor Português/Dinofaurêf
 
+### Links
+ - [Site online](http://dinofauro.graciano.tk/)
+ - [Página do dinofauro no face](https://www.facebook.com/oDINOFAURO)
 
-### to do
+
+### To do
 
  - Afeitar letraf maiúfculaf
  - Afeitar afentos
